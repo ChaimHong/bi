@@ -25,7 +25,7 @@ func Bit2Int(b int) int {
 
 func Int2Bit(b int64) string {
 	str := ""
-	for i := uint(0); i < uint(63); i++ {
+	for i := uint(0); i < uint(64); i++ {
 		if b&int64(1<<i) == int64(1<<i) {
 			str = "1" + str
 		} else {
